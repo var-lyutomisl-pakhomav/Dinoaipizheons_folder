@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="{{ url_for('static', filename='DC.png') }}" type="image/png">
+    <title>Dinoépiźeons_home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home_styles.css') }}">
+</head>
+<body>
+
+    <select id="BKtSelect">
+        <option value="background1.jpg">Rover</option>
+        <option value="background2.jpg">Rymdstation</option>
+        <option value="background3.jpg">Satellite</option>
+    </select>
+    
+    <script src="basic_setting.js"></script>
+
+    <div class="container">
+        <div class="rectangle">
+            <img src="DC.png" class="title-png">
+            <h1 class="animated-title" style="font-family: Cascadia Mono, sans-serif">DINOÉPIŹEONS</h1>
+            <br/>
+            <div class="lang" id="ENG">
+                <button class="btn" style="font-family: Cascadia Mono, sans-serif" id="btn-room-crset">Create room<span></span><span></span><span></span><span></span></button>
+                <button class="btn" style="font-family: Cascadia Mono, sans-serif" id="btn-room-join">Join room<span></span><span></span><span></span><span></span></button>
+                </br>
+                <h1></h1>
+                <button class="btn" style="font-family: Cascadia Mono, sans-serif" id="btn-setdir">Illustrate page<span></span><span></span><span></span><span></span></button>
+                <button class="btn" style="font-family: Cascadia Mono, sans-serif" id="btn4p">ERROR screen<span></span><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="basic_setting.js"></script>
+    <script>document.body.style.backgroundImage = "url('background1.jpg')";;</script>
+    <script>
+        var jumpButton = document.getElementById("btn-setdir");
+        jumpButton.addEventListener("click", function() {
+            var targetPageURL = "illustrate.html";
+
+            setTimeout(function() {
+                window.location.href = targetPageURL;
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

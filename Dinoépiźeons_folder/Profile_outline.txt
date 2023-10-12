@@ -1,0 +1,36 @@
+Dinoépiźeons_folder/
+
+     ®️ app.py
+
+    templates/
+         ®️ home.html
+         ®️ illustrate.html
+         ®️ svr_room.html
+         ®️ rcs_room.html
+        illustrate_pages/
+             ®️ room1.html
+             ®️ text1.html
+             ®️ else1.html
+    
+    static/
+        js/
+             ®️ copy.js
+             ®️ alert.js
+        css/
+             ®️ home_styles.css
+             ®️ illustrate_styles.css
+        images/
+             ®️ DC.png
+             ®️ background1.jpg
+             ®️ background2.jpg
+             ®️ background3.jpg
+    
+    massages/
+         ®️ user_nom.py
+         ®️ ip_nom.py
+         ®️ lang_text.py
+         ®️ controller.py
+    
+    connect/
+         ®️ server.py
+         ®️ recieve_user.py

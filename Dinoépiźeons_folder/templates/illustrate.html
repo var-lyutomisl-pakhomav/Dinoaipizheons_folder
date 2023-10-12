@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8"></meta>
+    <link rel="icon" href="DC.png" type="image/png">
+    <title>Dinoépiźeons_illustrate</title>
+    <link rel="stylesheet" type="text/css" href="illustrate_styles.css">
+</head>
+<body>
+    <button id="home-button" class="btn" href="home.html">🏠</button>
+
+    <select id="BKtSelect">
+        <option value="background1.jpg">Rover</option>
+        <option value="background2.jpg">Rymdstation</option>
+        <option value="background3.jpg">Satellite</option>
+    </select>
+
+    <script src="basic_setting.js"></script>
+    <script>document.body.style.backgroundImage = "url('background1.jpg')";;</script>
+
+    <div class="lang" id="ENG">
+        <nav style="font-family: Cascadia Mono, sans-serif" class="nav">
+            <ul>
+                <li><a href="illustrate.html">　　HOME　</a>
+                <li><a href="#">ROOM　　</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Oferta 01</a></li>
+                        <li><a href="#">Oferta 02</a></li>
+                        <li><a href="#">Oferta 03</a></li>
+                    </ul>
+                <li class="drop"><a href="#">TEXT　　</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Oferta 01</a></li>
+                        <li><a href="#">Oferta 02</a></li>
+                        <li><a href="#">Oferta 03</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ELSE　　</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Oferta 01</a></li>
+                        <li><a href="#">Oferta 02</a></li>
+                        <li><a href="#">Oferta 03</a></li>
+                    </ul>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="rectangle">
+                <h1 class="animated-title" style="font-family: Cascadia Mono, sans-serif">Instructions for use</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var homeButton = document.getElementById("home-button");
+        homeButton.addEventListener("click", function() {
+            window.location.href = "home.html";
+        });
+    </script>
+
+    <script src="basic_setting.js"></script>
+</body>
+</html>
